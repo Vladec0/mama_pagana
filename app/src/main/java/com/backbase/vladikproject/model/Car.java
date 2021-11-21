@@ -1,41 +1,18 @@
 package com.backbase.vladikproject.model;
 
-public class Car {
+public abstract class Car {
 
-    private int power;
-    private String name;
-    private int propertyId;
-    private int weight;
+    public void sitInsite (Person person) {
+        // toDo write methood
+    };
 
-    public Car(int parameterId, int power, String name, int weight) {
-        this.propertyId = parameterId;
-        this.name = name;
-        this.power = power;
-        this.weight = weight;
+    public void drive() {
+        // toDo write methood
+
     }
 
-    public int getPower() {
-        return power;
+    public void stop(){
+
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getId() {
-        return propertyId;
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public int calculateMaxSpeed() {
-        int maxSpeed = 0;
-        int powerCoefficient = power * 20;
-        int weightCoefficient = weight / 100;
-        maxSpeed = powerCoefficient / weightCoefficient;
-
-        return maxSpeed;
-    }
 }

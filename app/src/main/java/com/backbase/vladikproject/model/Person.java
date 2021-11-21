@@ -9,10 +9,7 @@ public class Person {
     private int age;
     private Person father;
     private Person mother;
-    private int money;
-
     private String biography;
-
 
     public int getAge() {
         return age;
@@ -41,14 +38,6 @@ public class Person {
         this.age = age;
     }
 
-    public Person(int id, String name, int age, int money){
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.money = money;
-    }
-
-
     public int getId() {
         return id;
     }
@@ -64,14 +53,6 @@ public class Person {
     public void say () {
         System.out.println("I LOOOX");
 
-    }
-
-    public int getMoney() {
-        return money;
-    }
-
-    public void setMoney(int money) {
-        this.money = money;
     }
 }
 
